@@ -1,0 +1,30 @@
+﻿<!doctype html>
+<html data-ng-app="PetShopManagerApp">
+<head>
+    <meta charset="utf-8">
+</head>
+<body>
+    <div ng-controller="PetShopManagerController">
+        <div class="menu-container"><cst-top-menu ng-show="isAuthenticated" /></div>
+        <section id="main" style="height:90%;">
+            <div data-ng-view ng-animate>
+            </div>
+        </section>
+        <cst-loading-overlay class="hide"></cst-loading-overlay>
+    </div>
+    <script src="/Scripts/libs/jquery-2.1.4.min.js"></script>
+    <script src="/Scripts/libs/jquery-ui-1.8.13.min.js"></script>
+    <script src="/Scripts/libs/angular.min.js"></script>
+    <script src="/Scripts/libs/angular-resource.min.js"></script>
+    <script src="/Scripts/libs/angular-route.min.js"></script>
+    <script src="/Scripts/libs/angular-animate.min.js"></script>
+
+    <script src="/Scripts/config.js"></script>
+    <script src="/Scripts/app/app.js"></script>
+    <script src="/Scripts/app/controllers/shared/PetShopManagerController.js"></script>
+    <script src="/Scripts/app/services/shared/HelperService.js"></script>
+    <script src="/Scripts/app/services/shared/PetShopManagerService.js"></script>
+
+    <script src="/Scripts/app/helpers/authorizationinterceptor.js"></script>
+</body>
+</html>
